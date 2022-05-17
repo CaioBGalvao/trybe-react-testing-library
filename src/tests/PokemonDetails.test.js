@@ -5,7 +5,8 @@ import renderWithRouter from '../helpers/renderWithRouter';
 import App from '../App';
 
 describe('Requisito 7', () => {
-  it('Testa se as informações detalhadas do pokémon selecionado são mostradas na tela', () => {
+  it(`Testa se as informações detalhadas do pokémon selecionado
+  são mostradas na tela`, () => {
     renderWithRouter(<App />);
 
     const moreDetails = screen.getByRole('link', { name: /more details/i });
