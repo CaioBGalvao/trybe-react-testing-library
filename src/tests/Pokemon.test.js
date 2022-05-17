@@ -5,7 +5,7 @@ import renderWithRouter from '../helpers/renderWithRouter';
 import App from '../App';
 
 describe('Requisito 6', () => {
-  it('Testa se é renderizado um card com as informações de determinado pokémon.', () =>{
+  it('Testa se é renderizado um card com as informações de determinado pokémon.', () => {
     renderWithRouter(<App />);
 
     let pkmnName = screen.getByText(/pikachu/i);
